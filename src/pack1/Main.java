@@ -51,7 +51,79 @@ public class veriables {
 		 return "Ankara";
 	}
 
+	public static void add() {
+        System.out.println("Add method");
+    }
+
+    public static void sub() {
+        System.out.println("Sub method");
+    }
+
+    public static void update() {
+        System.out.println("Update method");
+    }
+
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public static String giveCity(String message) {
+        return message + "Ankara";
+    }
+public static int addVariadic(int... numbers) {
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        return sum;
+    }
+
 	public static void main(String[] args) {
+		// Video-30
+		
+
+		// Video-29
+		/*
+  		Product product = new Product(1, "Laptop", "Asus Laptop", 5000, 3, "Black", "ASUS123");
+        
+        product.setId(1);
+        System.out.println(product.getId());
+        product.setName("Laptop");
+        System.out.println(product.getName());
+        product.setDescription("Asus Laptop");
+        System.out.println(product.getDescription());
+        product.setPrice(5000);
+        System.out.println(product.getPrice());
+        product.setStockAmount(3);
+        System.out.println(product.getStockAmount());
+        product.setColor("Black");
+        System.out.println(product.getColor());
+        product.setCode("ASUS123");
+        System.out.println(product.getCode());
+  		*/
+		
+		// Video-28
+		/*
+  		CustomerManager customerManager = new CustomerManager();
+       		customerManager.addCustomer();
+        	customerManager.deleteCustomer();
+       		customerManager.updateCustomer();
+  		*/
+
+		// Vdieo-27
+		/*
+  		int [] numbers = {1, 2, 3, 4, 5};
+        	System.out.println(addVariadic(numbers));
+  		*/
+		
+		// Video-26
+		/*
+  		 String message = "Today weathers is very good in ";
+        	String newMessage = giveCity(message);
+        	System.out.println(newMessage);
+       	 	int result = multiply(2, 3);
+       		System.out.println(result);
+  		*/
 		// Video-25
 		String mesaj = "Bugün hava çok güzel.";
 		String yeniMesaj = sehirVer();
